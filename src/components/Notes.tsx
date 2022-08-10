@@ -20,7 +20,7 @@ const Notes: React.FC<INotesProps> = ({note, handleDelete}) => {
         <Card.Subtitle className='text-muted lead fs-6'>
           {note.date}
         </Card.Subtitle>
-        <div className="d-grid gap-2 d-md-block">  
+        <div className="d-grid">  
           <Button variant="danger" className='mt-3 btn btn-sm' onClick={ () => {handleDelete(note.id)}}>
             Delete
           </Button>
